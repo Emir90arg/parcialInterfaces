@@ -1,0 +1,32 @@
+<script>
+function getNombre() {
+  var nombre = null;
+  nombre = document.getElementById("nombre").value;
+  document.getElementById('nom').innerHTML = nombre;
+}
+</script>
+<head>
+  <title>formulario</title>
+</head>
+
+<body>
+  <div id="contenedor">
+    <div id="cabeza">
+      <form action="" id="formulario">
+
+        <label id="engreso" for="">ingrese sus datos</label>
+
+        <input type="text" id="nombre" placeholder="Nombre" >     
+        <input type="button" value="enviar" name="boton" onclick="getNombre()">
+      </form>
+    </div>
+    <div id="cuerpo">
+      <h1 id="nom">Su nombre</h1>
+
+
+
+    </div>
+  </div>
+</body>
+
+</html>
